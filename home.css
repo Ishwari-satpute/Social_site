@@ -1,0 +1,95 @@
+.banner {
+    padding: 35px 20px;
+    color: white;
+    background-color: #4a90e2;
+    text-align: center;
+}
+
+.box,
+.post,
+.trending {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.box {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.box textarea {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.blue-button,
+.buttons button {
+    padding: 9px 12px;
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.feed {
+    flex: 2;
+}
+
+.feed h2 {
+    margin-bottom: 12px;
+}
+
+.post {
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    margin: 0 0 5px;
+    color: #1877f2;
+}
+
+.time {
+    color: #666;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+}
+
+.trending {
+    flex: 1;
+}
+
+.trending h2 {
+    margin-top: 0;
+}
+
+.trending p {
+    color: #1877f2;
+}
+
+@media (max-width: 700px) {
+    .layout {
+        flex-direction: column;
+    }
+}

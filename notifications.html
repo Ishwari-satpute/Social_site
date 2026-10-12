@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Connect</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="notifications.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Connect</a>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="profile.html#friends">Friends</a>
+        <a href="messages.html">Messages</a>
+        <a href="notifications.html">Notifications</a>
+        <input type="search" placeholder="Search users, posts, groups" aria-label="Search">
+        <button type="button">Logout</button>
+    </nav>
+
+    <main class="page">
+        <div class="heading">
+            <h1>Notifications</h1>
+            <button id="markReadButton" type="button">Mark all as read</button>
+        </div>
+
+        <section class="list" aria-label="Your notifications">
+            <article class="note unread">
+                <span class="icon like" aria-hidden="true">♥</span>
+                <div class="text">
+                    <p><strong>Priya Patil</strong> liked your post.</p>
+                    <small>10 minutes ago</small>
+                </div>
+            </article>
+
+            <article class="note unread">
+                <span class="icon comment" aria-hidden="true">💬</span>
+                <div class="text">
+                    <p><strong>Rahul Sharma</strong> commented: “Beautiful view!”</p>
+                    <small>30 minutes ago</small>
+                </div>
+            </article>
+
+            <article class="note unread request">
+                <span class="icon friend" aria-hidden="true">＋</span>
+                <div class="text">
+                    <p><strong>Neha Kulkarni</strong> sent you a friend request.</p>
+                    <small>1 hour ago</small>
+                    <div class="buttons">
+                        <button class="accept" type="button">Accept</button>
+                        <button class="decline" type="button">Decline</button>
+                    </div>
+                </div>
+            </article>
+
+            <a class="note unread" href="messages.html">
+                <span class="icon message" aria-hidden="true">✉</span>
+                <div class="text">
+                    <p><strong>Ananya Rao</strong> sent you a message.</p>
+                    <small>2 hours ago</small>
+                </div>
+            </a>
+
+            <article class="note">
+                <span class="icon like" aria-hidden="true">♥</span>
+                <div class="text">
+                    <p><strong>Arjun Mehta</strong> liked your photo.</p>
+                    <small>Yesterday</small>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="mailto:hello@connect.example">Contact Us</a>
+        </div>
+        <div class="social-links" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+        </div>
+        <p>© 2026 Connect</p>
+    </footer>
+
+    <script src="notifications.js"></script>
+</body>
+</html>

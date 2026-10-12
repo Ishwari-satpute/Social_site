@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav's Profile - Connect</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Connect</a>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="profile.html#friends">Friends</a>
+        <a href="messages.html">Messages</a>
+        <a href="notifications.html">Notifications</a>
+        <input type="search" placeholder="Search users, posts, groups" aria-label="Search">
+        <button type="button">Logout</button>
+    </nav>
+
+    <main class="page">
+        <section class="card">
+            <div class="cover">
+                <img id="coverPhoto" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Mountain landscape cover photo">
+            </div>
+
+            <div class="profile-info">
+                <img id="profilePhoto" class="photo" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=300&amp;h=300&amp;q=80" alt="Aarav Sharma">
+                <div class="info">
+                    <h1 id="username">Aarav Sharma</h1>
+                    <p id="bio">A photographer from Mumbai who loves cricket, chai, and weekend trips.</p>
+                    <p class="privacy">Profile: <span id="privacyStatus">Public</span></p>
+                </div>
+                <button id="editButton" class="edit" type="button">Edit Profile</button>
+            </div>
+
+            <form id="editForm" class="form" hidden>
+                <h2>Edit your profile</h2>
+                <label for="nameInput">Name</label>
+                <input id="nameInput" type="text" value="Aarav Sharma">
+
+                <label for="bioInput">Bio</label>
+                <textarea id="bioInput" rows="3">A photographer from Mumbai who loves cricket, chai, and weekend trips.</textarea>
+
+                <label for="profilePhotoInput">Profile picture URL</label>
+                <input id="profilePhotoInput" type="url" value="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=300&amp;h=300&amp;q=80">
+
+                <label for="coverPhotoInput">Cover photo URL</label>
+                <input id="coverPhotoInput" type="url" value="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1400&amp;q=80">
+
+                <label for="privacyInput">Profile privacy</label>
+                <select id="privacyInput">
+                    <option>Public</option>
+                    <option>Friends only</option>
+                    <option>Private</option>
+                </select>
+
+                <button class="save" type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <div class="columns">
+            <aside class="friends" id="friends">
+                <h2>Friends <span>(4)</span></h2>
+                <div class="friend-grid">
+                    <div class="friend">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Rahul Sharma">
+                        <p>Rahul Sharma</p>
+                    </div>
+                    <div class="friend">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Priya Patil">
+                        <p>Priya Patil</p>
+                    </div>
+                    <div class="friend">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Ananya Rao">
+                        <p>Ananya Rao</p>
+                    </div>
+                    <div class="friend">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" alt="Arjun Mehta">
+                        <p>Arjun Mehta</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="posts">
+                <h2>Aarav's Posts</h2>
+                <article class="post">
+                    <p class="date">October 12, 2026</p>
+                    <p>Watched a beautiful sunrise on my morning walk. Mumbai mornings are special! 🌅</p>
+                    <div class="actions">
+                        <button type="button">Like</button>
+                        <button type="button">Comment</button>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <p class="date">October 8, 2026</p>
+                    <p>Had chai and vada pav with my friends after work. ☕</p>
+                    <div class="actions">
+                        <button type="button">Like</button>
+                        <button type="button">Comment</button>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <p class="date">October 2, 2026</p>
+                    <p>Cheered for our team at the cricket match. What a fun weekend!</p>
+                    <div class="actions">
+                        <button type="button">Like</button>
+                        <button type="button">Comment</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="mailto:hello@connect.example">Contact Us</a>
+        </div>
+        <div class="social-links" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+        </div>
+        <p>© 2026 Connect</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Connect</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="messages.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Connect</a>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="profile.html#friends">Friends</a>
+        <a href="messages.html">Messages</a>
+        <a href="notifications.html">Notifications</a>
+        <input type="search" placeholder="Search users, posts, groups" aria-label="Search">
+        <button type="button">Logout</button>
+    </nav>
+
+    <main class="page">
+        <h1>Messages</h1>
+        <div class="layout">
+            <aside class="people">
+                <div class="heading">
+                    <h2>Conversations</h2>
+                    <button id="newGroupButton" type="button">New Group</button>
+                </div>
+                <div id="conversationList" class="list">
+                    <button class="person active" type="button" onclick="showChat(0)">
+                        <span class="avatar">R</span>
+                        <span><strong>Rahul Sharma</strong><small>See you soon!</small></span>
+                    </button>
+                    <button class="person" type="button" onclick="showChat(1)">
+                        <span class="avatar pink">P</span>
+                        <span><strong>Priya Patil</strong><small>That sounds great!</small></span>
+                    </button>
+                    <button class="person" type="button" onclick="showChat(2)">
+                        <span class="avatar green">M</span>
+                        <span><strong>Mumbai Friends (Group)</strong><small>Ananya: See you there!</small></span>
+                    </button>
+                </div>
+            </aside>
+
+            <section class="chat" aria-label="Chat conversation">
+                <header class="top">
+                    <h2 id="chatTitle">Rahul Sharma</h2>
+                    <p id="chatDescription">Chat with your friend</p>
+                </header>
+                <div id="messageList" class="messages" aria-live="polite"></div>
+                <form id="messageForm" class="send">
+                    <label class="hidden" for="messageInput">Write a message</label>
+                    <input id="messageInput" type="text" placeholder="Write a message..." autocomplete="off" required>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="mailto:hello@connect.example">Contact Us</a>
+        </div>
+        <div class="social-links" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+        </div>
+        <p>© 2026 Connect</p>
+    </footer>
+
+    <script src="messages.js"></script>
+</body>
+</html>

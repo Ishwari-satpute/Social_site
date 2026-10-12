@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - Home</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Connect</a>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="profile.html#friends">Friends</a>
+        <a href="messages.html">Messages</a>
+        <a href="notifications.html">Notifications</a>
+        <input type="text" placeholder="Search users, posts, groups" aria-label="Search">
+        <button type="button">Logout</button>
+    </nav>
+
+    <header class="banner">
+        <h1>Welcome to Connect!</h1>
+        <p>Share your moments with friends.</p>
+    </header>
+
+    <section class="box">
+        <h2>Create a Post</h2>
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        <button class="blue-button" type="button" onclick="createPost()">Post</button>
+    </section>
+
+    <div class="layout">
+        <main class="feed">
+            <h2>Latest Posts</h2>
+            <article class="post">
+                <h3>Rahul Sharma</h3>
+                <p class="time">2 hours ago</p>
+                <p>Enjoying a beautiful day with friends! 😊</p>
+                <div class="buttons">
+                    <button type="button" onclick="likePost(this)">👍 Like</button>
+                    <button type="button" onclick="commentPost()">💬 Comment</button>
+                    <button type="button" onclick="sharePost()">🔗 Share</button>
+                </div>
+            </article>
+            <article class="post">
+                <h3>Priya Patil</h3>
+                <p class="time">4 hours ago</p>
+                <p>Learning web development is fun! 💻</p>
+                <div class="buttons">
+                    <button type="button" onclick="likePost(this)">👍 Like</button>
+                    <button type="button" onclick="commentPost()">💬 Comment</button>
+                    <button type="button" onclick="sharePost()">🔗 Share</button>
+                </div>
+            </article>
+        </main>
+
+        <aside class="trending">
+            <h2>Trending Topics</h2>
+            <p>#WebDevelopment</p>
+            <p>#CodingLife</p>
+            <p>#Friendship</p>
+            <p>#Technology</p>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="mailto:hello@connect.example">Contact Us</a>
+        </div>
+        <div class="social-links" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+        </div>
+        <p>© 2026 Connect</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

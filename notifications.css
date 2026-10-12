@@ -1,0 +1,109 @@
+.page {
+    width: 90%;
+    max-width: 750px;
+    min-height: 65vh;
+    margin: 30px auto;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.heading h1 {
+    margin: 0;
+}
+
+.heading button,
+.buttons button {
+    padding: 9px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading button,
+.accept {
+    color: white;
+    background-color: #1877f2;
+}
+
+.list {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.note {
+    display: flex;
+    gap: 14px;
+    padding: 18px;
+    color: #222;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+}
+
+.note:last-child {
+    border-bottom: none;
+}
+
+.note.unread {
+    background-color: #eef5ff;
+}
+
+.icon {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.like {
+    background-color: #e44d68;
+}
+
+.comment {
+    background-color: #1877f2;
+}
+
+.friend {
+    background-color: #36956c;
+}
+
+.message {
+    background-color: #8b62c9;
+}
+
+.text p {
+    margin: 2px 0 6px;
+}
+
+.text small {
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.decline {
+    color: #333;
+    background-color: #ddd;
+}
+
+@media (max-width: 500px) {
+    .heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
